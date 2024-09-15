@@ -190,3 +190,67 @@ label div:active {
   transition: all 0.6s ease;
   visibility: visible;
 }
+
+@media screen and (max-width: 1115px) {
+  label {
+    width: 1.938rem;
+    height: 2.25rem;
+  }
+  label div{
+    width: 1.313rem;
+    height: 1.313rem;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  #pagi1:checked~.slider .subtitles .subtitle1 { 
+    margin-top: 0;
+  }
+  #pagi2:checked~.slider .subtitles .subtitle2 {
+    margin-top: -1.494rem;
+  }
+  #pagi3:checked~.slider .subtitles .subtitle3 {
+    margin-top: -2.828rem;
+  }
+  #pagi4:checked~.slider .subtitles .subtitle4 {
+    margin-top: -4.482rem;
+  }
+  #pagi5:checked~.slider .subtitles .subtitle5 {
+    margin-top: -5.976rem;
+  }
+  #pagi6:checked~.slider .subtitles .subtitle6  {
+    margin-top: -7.47rem;
+  }
+  #pagi7:checked~.slider .subtitles .subtitle7 {
+    margin-top: -8.964rem;
+  }
+  #pagi8:checked~.slider .subtitles .subtitle8 {
+    margin-top: -10.458rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  #wrapper {
+    flex-direction: column-reverse;
+    row-gap: 1.25rem;
+  }
+  .subtitles {
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    width: 70vw;
+  }
+  .slides {
+    height: 48vh;
+  }
+}
