@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Shantell+Sans&family=Yeseva+One&display=swap');
+
+body {
+ background: url('images/bg3.gif');
+ font-family: 'Rampart One';
+ color: #fff;
+}
+input {
+  pointer-events: none;
+  visibility: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+.slider {
+  width: 55vw;
+  overflow: hidden;
+  border: 0.4rem rgba(0,49,83) solid;
+  margin: 0 auto 1.25rem auto;
+}
+.slides {
+  width: 800%;
+  height: 62vh;
+  display: flex;
+  background-color: rgba(66,133,180, 0.4);
+}
+.slide {
+  width: 12.5%;
+  height: 100%;
+  transition: all 0.6s ease;
+}
+
+.slide:nth-child(1) {
+  background: url(images/1.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(2) {
+  background: url(images/2.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(3) {
+  background: url(images/3.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(4) {
+  background: url(images/4.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(5) {
+  background: url(images/5.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(6) {
+  background: url(images/6.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(7) {
+  background: url(images/7.jpeg) center center/contain no-repeat;
+}
+.slide:nth-child(8) {
+  background: url(images/8.jpeg) center center/contain no-repeat;
+}
+#wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.625rem 0 0.625rem 0;
+}
+.subtitles {
+  visibility: hidden;
+  height: 1.724rem;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.6s ease;
+}
+.subtitle {
+  font-size: 1.5rem;
+}
+.labels {
+  display: inline-flex;
+  justify-content: end;
+  column-gap: 0.118rem;
+}
+label {
+  width: 2.25rem;
+  height: 2.563rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label div{
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+label div:hover {
+  background-color: blue;
+  transform: scale(1.1);
+}
+label div:active {
+  background-color: #FEFE22;
+  transform: scale(1.1);
+}
+#pagi1:checked ~ .slider .labels .label1 div,
+#pagi2:checked ~ .slider .labels .label2 div,
+#pagi3:checked ~ .slider .labels .label3 div,
+#pagi4:checked ~ .slider .labels .label4 div,
+#pagi5:checked ~ .slider .labels .label5 div,
+#pagi6:checked ~ .slider .labels .label6 div,
+#pagi7:checked ~ .slider .labels .label7 div,
+#pagi8:checked ~ .slider .labels .label8 div{
+  background-color: red;
+  transform: scale(1.1);
+}
+
+#pagi1:checked ~ .slider .labels .label1 div:hover,
+#pagi2:checked ~ .slider .labels .label2 div:hover,
+#pagi3:checked ~ .slider .labels .label3 div:hover,
+#pagi4:checked ~ .slider .labels .label4 div:hover,
+#pagi5:checked ~ .slider .labels .label5 div:hover,
+#pagi6:checked ~ .slider .labels .label6 div:hover,
+#pagi7:checked ~ .slider .labels .label7 div:hover,
+#pagi8:checked ~ .slider .labels .label8 div:hover{
+  background-color: blue;
+  transform: scale(1.1);
+}
+
+#pagi1:checked~.slider .slides .slide1 {
+  margin-left: 0;
+}
+#pagi2:checked~.slider .slides .slide1 {
+  margin-left: -12.5%;
+}
+#pagi3:checked~.slider .slides .slide1 {
+  margin-left: -25%;
+}
+#pagi4:checked~.slider .slides .slide1 {
+  margin-left: -37.5%;
+}
+#pagi5:checked~.slider .slides .slide1 {
+  margin-left: -50%;
+}
+#pagi6:checked~.slider .slides .slide1 {
+  margin-left: -62.5%;
+}
+#pagi7:checked~.slider .slides .slide1 {
+  margin-left: -75%;
+}
+#pagi8:checked~.slider .slides .slide1 {
+  margin-left: -87.5%;
+}
+
+
+#pagi1:checked~.slider .subtitles .subtitle1 { 
+  margin-top: 0;
+  visibility: visible;
+  transition: all 0.6s ease;
+}
+#pagi2:checked~.slider .subtitles .subtitle2 {
+  margin-top: -1.724rem;
+  visibility: visible;
+  transition: all 0.6s ease;
+}
+#pagi3:checked~.slider .subtitles .subtitle3 {
+  margin-top: -3.448rem;
+  visibility: visible;
+  transition: all 0.6s ease;
+}
+#pagi4:checked~.slider .subtitles .subtitle4 {
+  margin-top: -5.172rem;
+  transition: all 0.6s ease;
+  visibility: visible;
+}
+#pagi5:checked~.slider .subtitles .subtitle5 {
+  margin-top: -6.896rem;
+  transition: all 0.6s ease;
+  visibility: visible;
+}
+#pagi6:checked~.slider .subtitles .subtitle6  {
+  margin-top: -8.62rem;
+  transition: all 0.6s ease;
+  visibility: visible;
+}
+#pagi7:checked~.slider .subtitles .subtitle7 {
+  margin-top: -10.344rem;
+  transition: all 0.6s ease;
+  visibility: visible;
+}
+#pagi8:checked~.slider .subtitles .subtitle8 {
+  margin-top: -12.068rem;
+  transition: all 0.6s ease;
+  visibility: visible;
+}
